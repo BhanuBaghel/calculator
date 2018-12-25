@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" type="x-icon" href="12345.png">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="calculator">
+            <div class="first-row write" id="write"></div>
+            <div class="row">
+                <div class="button clear">C</div>
+                <div class="button backspace">←</div>
+                <div class="button divide" onclick="operator('/')">÷</div>
+            </div>
+            <div class="row">
+                <div class="button seven" onclick="printNumber(7)">7</div>
+                <div class="button eight" onclick="printNumber(8)">8</div>
+                <div class="button nine" onclick="printNumber(9)">9</div>
+                <div class="button multiply" onclick="operator('*')">x</div>
+            </div>
+            <div class="row">
+                <div class="button four" onclick="printNumber(4)">4</div>
+                <div class="button five" onclick="printNumber(5)">5</div>
+                <div class="button six" onclick="printNumber(6)">6</div>
+                <div class="button minuse" onclick="operator('-')">-</div>
+            </div>
+            <div class="row">
+                <div class="button three" onclick="printNumber(3)">3</div>
+                <div class="button two" onclick="printNumber(2)">2</div>
+                <div class="button one" onclick="printNumber(1)">1</div>
+                <div class="button plus" onclick="operator('+')">+</div>
+            </div>
+            <div class="row">
+                <div class="button zero" onclick="printNumber(0)">0</div>
+                <div class="button equal" onclick="result()">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
